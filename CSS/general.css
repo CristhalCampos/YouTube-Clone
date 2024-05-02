@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+}
+nav>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#yt-logo-updated-svg_yt1 {
+    width: 100px;
+}
+svg {
+    fill: white;
+    cursor: pointer;
+}
+#perfil {
+    border-radius: 50%;
+    cursor: pointer;
+}
+#buscar {
+    display: none;
+}
+.responsive {
+    border-radius: 50%;
+    padding: 8px;
+}
+.responsive:hover {
+    background-color: gray;
+}
+.cambio {
+    border-radius: 50%;
+    padding: 8px;
+}
+.cambio:hover {
+    background-color: gray;
+}
+button {
+    background-color: #272727;
+    border-style: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: gray;
+}
+#flecha {
+    display: flex;
+    align-items: center;
+    position: static;
+    border-radius: 50%;
+    padding: 8px 10px 8px 10px;
+    cursor: pointer;
+}
+#flecha:hover {
+    background-color: gray;
+}
+#principal {
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+#barralateral {
+    display: none;
+}
+#barrafiltros {
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+}
+.filtro {
+    display: none;
+}
+#todos {
+    background-color: #f1f1f1;
+    color: #272727;
+    font-weight: 700;
+}
+#videos {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.informacion {
+    display: grid;
+    grid-template-columns: 8% 92%;
+}
+
+@media only screen and (min-width: 768px) {
+    #buscar {
+        display: flex;
+    }
+    .responsive {
+        display: none;
+    }
+    #barrabuscar {
+        display: flex;
+        align-items: center;
+    }
+    #textbuscar {
+        background-color: #121212;
+        border-radius: 20px 0 0 20px;
+        border: 0.1px solid #303030;
+        border-right: 0;
+        padding-left: 15px;
+        width: 400px;
+        height: 40px;
+    }
+    #lupa {
+        background-color: #222222;
+        border: 0.1px solid #303030;
+        border-radius: 0 20px 20px 0;
+        padding: 8px 15px 8px 20px;
+    }
+    #microfono {
+        background-color: #272727;
+        border-radius: 50%;
+        padding: 8px;
+    }
+    #microfono:hover {
+        background-color: gray;
+    }
+    #barralateral {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 8px;
+    } 
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        border-radius: 7px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 10px;
+    }
+    .menu svg {
+        padding-top: 10px;
+    }
+    .menu p {
+        padding-bottom: 10px;
+    }
+    .menu:hover {
+        background-color: gray;
+        svg, p {
+            background-color: gray;
+        }
+    }
+    .filtro {
+        display: flex;
+    }
+    #videos {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        margin: 22px 0 0 18px;
+    }
+}
