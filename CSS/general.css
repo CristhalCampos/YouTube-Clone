@@ -27,7 +27,7 @@ svg {
     border-radius: 50%;
     cursor: pointer;
 }
-#buscar {
+.buscar {
     display: none;
 }
 .responsive {
@@ -60,25 +60,36 @@ button:hover {
 #flecha {
     display: flex;
     align-items: center;
-    position: static;
     border-radius: 50%;
-    padding: 8px 10px 8px 10px;
+    padding: 8px 10px;
     cursor: pointer;
 }
 #flecha:hover {
     background-color: gray;
 }
-#principal {
+.fijo {
+    display: flex;
+    position: absolute;
+}
+#caja {
+    width: 15px;
+    background: linear-gradient(to left, #0f0f0f, #303030);
+}
+main {
     display: grid;
     grid-template-columns: 5% 95%;
 }
-#barralateral {
+aside {
     display: none;
 }
-#barrafiltros {
+.barrafiltros {
     display: flex;
     justify-content: end;
+    position: relative;
     gap: 8px;
+    padding-left: 20px;
+    width: max-content;
+    overflow-x: hidden;
 }
 .filtro {
     display: none;
@@ -88,25 +99,31 @@ button:hover {
     color: #272727;
     font-weight: 700;
 }
-#videos {
+.videos {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 15px 20px;
+}
+.video > img {
+    width: 300px;
 }
 .informacion {
     display: grid;
     grid-template-columns: 8% 92%;
 }
 
+
 @media only screen and (min-width: 768px) {
-    #buscar {
+    .buscar {
         display: flex;
     }
     .responsive {
         display: none;
     }
-    #barrabuscar {
+    .buscar > div {
         display: flex;
         align-items: center;
+        width: 400px;
     }
     #textbuscar {
         background-color: #121212;
@@ -114,7 +131,7 @@ button:hover {
         border: 0.1px solid #303030;
         border-right: 0;
         padding-left: 15px;
-        width: 400px;
+        width: 100%;
         height: 40px;
     }
     #lupa {
@@ -131,7 +148,7 @@ button:hover {
     #microfono:hover {
         background-color: gray;
     }
-    #barralateral {
+    aside {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -161,7 +178,7 @@ button:hover {
     .filtro {
         display: flex;
     }
-    #videos {
+    .videos {
         display: grid;
         grid-template-columns: repeat(4, 25%);
         margin: 22px 0 0 18px;

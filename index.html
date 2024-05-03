@@ -49,8 +49,8 @@
                 </svg>
             </svg>
         </div>
-        <div id="buscar">
-            <div id="barrabuscar">
+        <div class="buscar">
+            <div>
                 <input type="text" id="textbuscar" placeholder="Buscar">
                 <svg 
                     id="lupa" 
@@ -116,8 +116,8 @@
             <img src="./IMG/perfil.png" alt="perfil" id="perfil" width="30px">
         </div>
     </nav>
-    <div id="principal">
-        <div id="barralateral">
+    <main>
+        <aside>
             <div class="menu">
                 <svg
                     xmlns="http://www.w3.org/2000/svg" 
@@ -165,26 +165,30 @@
                 </svg>
                 <p>Tú</p>
             </div>
-        </div>
-        <div>
-            <div id="barrafiltros">
+        </aside>
+        <section>
+            <div class="barrafiltros">
                 <button id="todos">Todos</button>
                 <button>Videojuegos</button>
                 <button>Música</button>
                 <button>Suspenso</button>
                 <button>Mixes</button>
-                <button class="filtro">Series de televisión</button>
+                <button>Series de televisión</button>
                 <button class="filtro">Comedias</button>
                 <button class="filtro">Reggaeton</button>
                 <button class="filtro">En directo</button>
-                <button class="filtro">Vistos</button>
-                <button class="filtro">Juego de naipes</button>
+                <button class="filtro">Juegos de mesa</button>
+                <button class="filtro">Telenovelas</button>
+                <button class="filtro">Películas</button>
                 <button class="filtro">Historia</button>
-                <i class="fa-solid fa-angle-right" id="flecha"></i>
+                <div class="fijo">
+                    <div id="caja"></div>
+                    <i class="fa-solid fa-angle-right" id="flecha"></i>
+                </div>
             </div>
-            <div id="videos">
+            <div class="videos">
                 <div>
-                    <div class="video"><img src="./IMG/video1.jpeg" alt="video1" width="300px"></div>
+                    <div class="video"><img src="./IMG/video1.jpeg" alt="video1"></div>
                     <div class="informacion">
                         <div><i class="fa-solid fa-circle-user"></i></div>
                         <div>
@@ -195,7 +199,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="video"><img src="./IMG/video2.jpeg" alt="video2" width="300px"></div>
+                    <div class="video"><img src="./IMG/video2.jpeg" alt="video2"></div>
                     <div class="informacion">
                         <div><i class="fa-solid fa-circle-user"></i></div>
                         <div>
@@ -206,7 +210,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="video"><img src="./IMG/video3.jpeg" alt="video3" width="300px"></div>
+                    <div class="video"><img src="./IMG/video3.jpeg" alt="video3"></div>
                     <div class="informacion">
                         <div><i class="fa-solid fa-circle-user"></i></div>
                         <div>
@@ -217,7 +221,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="video"><img src="./IMG/video4.jpeg" alt="video4" width="300px"></div>
+                    <div class="video"><img src="./IMG/video4.jpeg" alt="video4"></div>
                     <div class="informacion">
                         <div><i class="fa-solid fa-circle-user"></i></div>
                         <div>
@@ -228,7 +232,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="video"><img src="./IMG/video5.jpeg" alt="video5" width="300px"></div>
+                    <div class="video"><img src="./IMG/video5.jpeg" alt="video5"></div>
                     <div class="informacion">
                         <div><i class="fa-solid fa-circle-user"></i></div>
                         <div>
@@ -239,7 +243,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="video"><img src="./IMG/video6.jpeg" alt="video6" width="300px"></div>
+                    <div class="video"><img src="./IMG/video6.jpeg" alt="video6"></div>
                     <div class="informacion">
                         <div><i class="fa-solid fa-circle-user"></i></div>
                         <div>
@@ -250,7 +254,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="video"><img src="./IMG/video7.jpeg" alt="video7" width="300px"></div>
+                    <div class="video"><img src="./IMG/video7.jpeg" alt="video7"></div>
                     <div class="informacion">
                         <div><i class="fa-solid fa-circle-user"></i></div>
                         <div>
@@ -261,7 +265,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="video"><img src="./IMG/video8.jpeg" alt="video8" width="300px"></div>
+                    <div class="video"><img src="./IMG/video8.jpeg" alt="video8"></div>
                     <div class="informacion">
                         <div><i class="fa-solid fa-circle-user"></i></div>
                         <div>
@@ -272,7 +276,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>
