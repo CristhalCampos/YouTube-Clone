@@ -91,7 +91,10 @@ aside {
     width: max-content;
     overflow-x: hidden;
 }
-.filtro {
+.filtro1 {
+    display: none;
+}
+.filtro2 {
     display: none;
 }
 #todos {
@@ -109,9 +112,36 @@ aside {
 }
 .informacion {
     display: grid;
-    grid-template-columns: 8% 92%;
+    grid-template-columns: 10% 90%;
+    justify-items: center;
+    gap: 10px;
 }
-
+.informacion img {
+    width: 30px;
+    padding: 5px;
+}
+.contenido {
+    width: 100%;
+}
+.contenido h3 {
+    padding: 3px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.contenido p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 2px 0;
+    color: gray;
+}
+sup {
+    font-size: 5px;
+    color: gray;
+}
 
 @media only screen and (min-width: 768px) {
     .buscar {
@@ -175,12 +205,31 @@ aside {
             background-color: gray;
         }
     }
-    .filtro {
+    .filtro1 {
         display: flex;
     }
+    .filtro2 {
+        display: none;
+    }
+    .videos {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        gap: 10px;
+        margin: 22px 0 0 18px;
+    }
+    .video img {
+        width: 100%;
+        min-width: 100px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
     .videos {
         display: grid;
         grid-template-columns: repeat(4, 25%);
         margin: 22px 0 0 18px;
+    }
+    .filtro2 {
+        display: flex;
     }
 }
